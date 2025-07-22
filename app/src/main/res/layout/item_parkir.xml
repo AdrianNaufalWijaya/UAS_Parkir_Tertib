@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textPlatNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plat: B 1234 CD"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textJenisKendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textWaktuMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk: 2025-07-16 08:00"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

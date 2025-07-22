@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ParkirTertib</string>
+
+    <string-array name="jenis_kendaraan">
+        <item>Mobil</item>
+        <item>Motor</item>
+        <item>Truk</item>
+    </string-array>
+
+</resources>

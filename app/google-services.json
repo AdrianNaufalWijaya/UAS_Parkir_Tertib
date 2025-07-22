@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182141248078",
+    "project_id": "parkir-tertib",
+    "storage_bucket": "parkir-tertib.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182141248078:android:e408a1e5d334597ed6191f",
+        "android_client_info": {
+          "package_name": "com.example.parkirtertib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrte7lt5tOAGU40R6Tim1Orij0pSzSogA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
