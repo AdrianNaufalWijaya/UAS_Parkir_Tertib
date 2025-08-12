@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary app colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Filter button colors -->
+    <color name="filter_button_stroke_color">#CCCCCC</color>
+    <color name="filter_button_text_color">#333333</color>
+    <color name="filter_button_background_color">#FFFFFF</color>
+
+    <!-- Additional common colors you might need -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="red_500">#F44336</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+
+        <color name="dark_gray">#212121</color>
+        <color name="medium_gray">#757575</color>
+        <color name="light_gray_divider">#E0E0E0</color>
+
+        <color name="gradient_start">#B3E5FC</color>
+        <color name="gradient_end">#1E88E5</color>
+
+
+
 </resources>

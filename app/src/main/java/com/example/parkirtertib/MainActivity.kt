@@ -5,9 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.example.parkirtertib.databinding.ActivityMainBinding
+import com.example.parkirtertib.login.LoginFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        val navController = findNavController(R.id.nav_host_fragment_container)
         binding.navView.setupWithNavController(navController)
     }
 
@@ -27,8 +27,9 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         val currentUser = FirebaseAuth.getInstance().currentUser
         if (currentUser == null) {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+
+            val navController = findNavController(R.id.nav_host_fragment_container)
+            navController.navigate(R.id.loginFragment)
         }
     }
 }

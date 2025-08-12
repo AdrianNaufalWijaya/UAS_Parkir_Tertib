@@ -3,26 +3,186 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/navigation_home">
 
+    <!-- Home Fragment -->
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/navigation_home"
         android:name="com.example.parkirtertib.HomeFragment"
-        android:label="Home" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
 
-    <fragment
-        android:id="@+id/formMasukFragment"
-        android:name="com.example.parkirtertib.FormMasukFragment"
-        android:label="Form Masuk" />
+        <!-- Action ke Login -->
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
 
-    <fragment
-        android:id="@+id/riwayatFragment"
-        android:name="com.example.parkirtertib.ui.riwayat.RiwayatFragment"
-        android:label="Riwayat"
-        tools:layout="@layout/fragment_riwayat"/>
+        <!-- Action ke Register -->
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
 
+        <!-- Action ke Lupa Password -->
+        <action
+            android:id="@+id/action_homeFragment_to_lupaPasswordFragment"
+            app:destination="@id/lupaPasswordFragment" />
+
+        <!-- Action ke Profile -->
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/navigation_profil" />
+
+        <!-- Action ke Riwayat -->
+        <action
+            android:id="@+id/action_homeFragment_to_riwayatFragment"
+            app:destination="@id/navigation_riwayat" />
+
+        <!-- Action ke Form Masuk Parkir -->
+        <action
+            android:id="@+id/action_homeFragment_to_formMasukFragment"
+            app:destination="@id/navigation_formMasuk" />
+
+        <!-- Action ke Settings - TAMBAHKAN INI -->
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+        <!-- Action ke Help - TAMBAHKAN INI -->
+        <action
+            android:id="@+id/action_homeFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <!-- Settings Fragment - TAMBAHKAN INI -->
     <fragment
-        android:id="@+id/profilFragment"
+        android:id="@+id/settingsFragment"
+        android:name="com.example.parkirtertib.SettingsFragment"
+        android:label="Pengaturan"
+        tools:layout="@layout/fragment_setting">
+
+        <!-- Action back to home -->
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+
+        <!-- Action to login (after logout) -->
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Help Fragment - TAMBAHKAN INI (optional, untuk future) -->
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.parkirtertib.HelpFragment"
+        android:label="Bantuan"
+        tools:layout="@layout/fragment_help">
+
+        <!-- Action back to home -->
+        <action
+            android:id="@+id/action_helpFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.parkirtertib.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_lupaPasswordFragment"
+            app:destination="@id/lupaPasswordFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Register Fragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.parkirtertib.login.RegisterFragment"
+        android:label="Daftar"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Lupa Password Fragment -->
+    <fragment
+        android:id="@+id/lupaPasswordFragment"
+        android:name="com.example.parkirtertib.login.LupaPasswordFragment"
+        android:label="Lupa Password"
+        tools:layout="@layout/fragment_lupa_password">
+
+        <action
+            android:id="@+id/action_lupaPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/navigation_profil"
         android:name="com.example.parkirtertib.ProfilFragment"
-        android:label="Profil" />
+        android:label="Profil"
+        tools:layout="@layout/fragment_profil">
+
+        <action
+            android:id="@+id/action_profilFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+
+        <action
+            android:id="@+id/action_profilFragment_to_riwayatFragment"
+            app:destination="@id/navigation_riwayat" />
+
+        <action
+            android:id="@+id/action_profilFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+        <action
+            android:id="@+id/action_profilFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <!-- Riwayat Fragment -->
+    <fragment
+        android:id="@+id/navigation_riwayat"
+        android:name="com.example.parkirtertib.RiwayatFragment"
+        android:label="Riwayat"
+        tools:layout="@layout/fragment_riwayat" />
+
+    <!-- Form Masuk Fragment -->
+    <fragment
+        android:id="@+id/navigation_formMasuk"
+        android:name="com.example.parkirtertib.FormMasukFragment"
+        android:label="Form Masuk Parkir"
+        tools:layout="@layout/fragment_form_masuk" />
+
+    <!-- Edit Profile Fragment (optional, untuk future) -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.parkirtertib.EditProfileFragment"
+        android:label="Edit Profil"
+        tools:layout="@layout/fragment_edit_profil" />
+
 </navigation>

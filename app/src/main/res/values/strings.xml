@@ -7,4 +7,73 @@
         <item>Truk</item>
     </string-array>
 
+    <!-- Navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="dont_have_account">Belum punya akun? Daftar di sini</string>
+    <string name="already_have_account">Sudah punya akun? Masuk di sini</string>
+
+    <!-- Messages -->
+    <string name="login_success">Login berhasil! Selamat datang</string>
+    <string name="register_success">Registrasi berhasil! Selamat datang</string>
+    <string name="logout_success">Berhasil logout</string>
+    <string name="email_empty">Email tidak boleh kosong</string>
+    <string name="password_empty">Password tidak boleh kosong</string>
+    <string name="password_min_length">Password minimal 6 karakter</string>
+    <string name="email_invalid">Format email tidak valid</string>
+    <string name="password_not_match">Password tidak sama</string>
+    <string name="name_empty">Nama tidak boleh kosong</string>
+    <string name="name_min_length">Nama minimal 2 karakter</string>
+
+    <!-- Parking -->
+    <string name="welcome_parking">Selamat Datang di Parkir Tertib</string>
+    <string name="parking_description">Sistem parkir modern dan efisien untuk kemudahan Anda</string>
+    <string name="enter_parking">Masuk Parkir</string>
+    <string name="parking_history">Riwayat</string>
+    <string name="profile">Profile</string>
+
+    <!-- Password Reset -->
+    <string name="reset_password_title">Lupa Password?</string>
+    <string name="reset_password_description">Masukkan email Anda untuk reset password</string>
+    <string name="send_reset_link">Kirim Link Reset</string>
+    <string name="reset_link_sent">Link reset password telah dikirim ke email Anda</string>
+    <string name="back_to_login">Kembali ke Login</string>
+
+    <!-- Error Messages -->
+    <string name="network_error">Periksa koneksi internet Anda</string>
+    <string name="email_already_exists">Email sudah terdaftar</string>
+    <string name="email_not_found">Email tidak terdaftar dalam sistem</string>
+    <string name="invalid_password">Password salah</string>
+    <string name="user_not_found">Email tidak terdaftar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_tagline">Sistem parkir modern dan efisien untuk kemudahan Anda</string>
+    <string name="help_title">Bantuan</string>
+    <string name="back_button">Kembali</string>
+    <string name="app_logo_description">Logo Aplikasi</string>
+    <string name="faq_label">Pertanyaan Umum (FAQ)</string>
+    <string name="faq_icon">Ikon Bantuan</string>
+    <string name="contact_label">Hubungi Kami</string>
+    <string name="contact_icon">Ikon Email</string>
+    <string name="privacy_label">Kebijakan Privasi</string>
+    <string name="privacy_icon">Ikon Privasi</string>
+    <string name="terms_label">Syarat dan Ketentuan</string>
+    <string name="terms_icon">Ikon Dokumen</string>
+    <string name="version_label">Versi Aplikasi</string>
+    <string name="version_icon">Ikon Info</string>
+    <string name="app_version_number">v1.0.0</string>
+    <string name="go_to">Menuju ke halaman</string>
+    <string name="help_footer_text">© 2024 Parkir Tertib</string>
+
 </resources>
